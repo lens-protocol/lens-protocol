@@ -195,7 +195,7 @@ abstract contract ReferralSystemTest is BaseTest {
                         _executeOperation(target, quoteOrCommentAsReferralPub);
                     }
 
-                    // One special case is a post as referal for reference node
+                    // One special case is a post as referral for reference node
                     console.log('Special case: Target as a quote/comment node and pass post as referral');
                     TestPublication memory referralPub = treeV2.post;
                     // vm.expectCall /* */();
@@ -256,7 +256,7 @@ abstract contract ReferralSystemTest is BaseTest {
             console.log('Preparing operation...');
             _referralSystem_PrepareOperation(target, referralPub);
 
-            // Shoule revert as V1-contaminated trees don't have a root and only allow downwards referrals
+            // Should revert as V1-contaminated trees don't have a root and only allow downwards referrals
             if (!_referralSystem_ExpectRevertsIfNeeded(target, referralPub)) {
                 vm.expectRevert(Errors.InvalidReferrer.selector);
             }
