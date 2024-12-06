@@ -1,6 +1,6 @@
 # This script compares the Storage Layout differences before/after the upgrade ("old"/"new" implementations).
 # The addresses are taken from the addresses.json
-# The address of previous implentation if fetched from TransparentProxy "implementation()" slot.
+# The address of previous implementation if fetched from TransparentProxy "implementation()" slot.
 # The previous implementation source code is fetched from the block explorer.
 # New implementation is assumed to be deployed and the new address is fetched from the addresses.json
 # Storage Layouts are generated from both implementations and compared using diff
