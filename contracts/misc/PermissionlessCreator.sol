@@ -10,7 +10,7 @@ import {ITokenHandleRegistry} from 'contracts/interfaces/ITokenHandleRegistry.so
 import {ImmutableOwnable} from 'contracts/misc/ImmutableOwnable.sol';
 
 /**
- * @title PermissonlessCreator
+ * @title PermissionlessCreator
  * @author Lens Protocol
  * @notice This is an ownable public proxy contract which is open for all.
  */
