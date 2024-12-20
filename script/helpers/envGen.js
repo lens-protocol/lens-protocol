@@ -52,7 +52,7 @@ str.write(`\n# Profile creation proxy\n`);
 str.write(`PROFILE_CREATION_PROXY=${addressOrZero('ProfileCreationProxy')}\n`);
 
 str.write(`\n# Permissionless creator\n`);
-str.write(`PERMISSONLESS_CREATOR=${addresses['PermissionlessCreator']}\n`);
+str.write(`PERMISSIONLESS_CREATOR=${addresses['PermissionlessCreator']}\n`);
 
 str.write(`\n# Credits faucet\n`);
 str.write(`CREDITS_FAUCET=${addressOrZero('CreditsFaucet')}\n`);
@@ -120,7 +120,7 @@ str.write(
   )}\n`
 );
 str.write(
-  `LEGACY_DEGREE_OF_SEPERATION_REFERENCE_MODULE=${findModule(
+  `LEGACY_DEGREE_OF_SEPARATION_REFERENCE_MODULE=${findModule(
     'reference',
     'DegreesOfSeparationReferenceModule',
     'v1'
@@ -157,7 +157,7 @@ str.write(`REVERT_FOLLOW_MODULE=${findModule('follow', 'RevertFollowModule', 'v2
 // V2 REFERENCE MODULES
 str.write(`\n## v2 reference modules\n`);
 str.write(
-  `DEGREE_OF_SEPERATION_REFERENCE_MODULE=${findModule(
+  `DEGREE_OF_SEPARATION_REFERENCE_MODULE=${findModule(
     'reference',
     'DegreesOfSeparationReferenceModule',
     'v2'
