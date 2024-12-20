@@ -421,7 +421,7 @@ contract S02_DeployLensV2Periphery is Script, ForkManagement, ArrayHelpers {
         vm.writeLine(
             backendEnv,
             string.concat(
-                'DEGREE_OF_SEPERATION_REFERENCE_MODULE=',
+                'DEGREE_OF_SEPARATION_REFERENCE_MODULE=',
                 vm.toString(address(degreesOfSeparationReferenceModule))
             )
         );
