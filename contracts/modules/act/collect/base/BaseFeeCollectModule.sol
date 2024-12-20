@@ -230,7 +230,7 @@ abstract contract BaseFeeCollectModule is FeeModuleBase, ActionRestricted, IBase
     }
 
     /**
-     * @dev Tranfers the fee to recipient(-s)
+     * @dev Transfers the fee to recipient(-s)
      *
      * Override this to add additional functionality (e.g. multiple recipients)
      *
@@ -253,7 +253,7 @@ abstract contract BaseFeeCollectModule is FeeModuleBase, ActionRestricted, IBase
     }
 
     /**
-     * @dev Tranfers the part of fee to referral(-s)
+     * @dev Transfers the part of fee to referral(-s)
      *
      * Override this to add additional functionality (e.g. different amounts to different referrals, etc)
      *
