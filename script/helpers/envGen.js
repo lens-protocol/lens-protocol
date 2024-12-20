@@ -52,7 +52,7 @@ str.write(`\n# Profile creation proxy\n`);
 str.write(`PROFILE_CREATION_PROXY=${addressOrZero('ProfileCreationProxy')}\n`);
 
 str.write(`\n# Permissionless creator\n`);
-str.write(`PERMISSONLESS_CREATOR=${addresses['PermissionlessCreator']}\n`);
+str.write(`PERMISSIONLESS_CREATOR=${addresses['PermissionlessCreator']}\n`);
 
 str.write(`\n# Credits faucet\n`);
 str.write(`CREDITS_FAUCET=${addressOrZero('CreditsFaucet')}\n`);
