@@ -198,7 +198,7 @@ abstract contract BaseFeeCollectModule is FeeModuleBase, ActionRestricted, IBase
     }
 
     /**
-     * @dev Internal processing of a collect with a referrals (if any).
+     * @dev Internal processing of a collect with referrals (if any).
      *
      * Same as _processCollect, but also includes transfer to referrals (if any):
      *  1. Calculation of fees
