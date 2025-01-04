@@ -257,7 +257,7 @@ contract DegreesOfSeparationReferenceModule is LensModuleMetadata, HubRestricted
                 followedProfileId: profilePath[0]
             });
             // Checks each profile owner in the path is following the profile coming next, according the order.
-            // In the previous notaiton: path[0] --> path[1] --> path[2] --> ... --> path[n-2] --> path[n-1]
+            // In the previous notation: path[0] --> path[1] --> path[2] --> ... --> path[n-2] --> path[n-1]
             uint256 i;
             while (i < profilePath.length - 1) {
                 FollowValidationLib.validateIsFollowing({
