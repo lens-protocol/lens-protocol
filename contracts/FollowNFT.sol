@@ -25,7 +25,7 @@ contract FollowNFT is HubRestricted, LensBaseERC721, ERC2981CollectionRoyalties,
     string constant FOLLOW_NFT_NAME_SUFFIX = '-Follower';
     string constant FOLLOW_NFT_SYMBOL_SUFFIX = '-Fl';
 
-    uint256[5] ___DEPRECATED_SLOTS; // Deprecated slots, previously used for delegations.
+    uint256[5] __DEPRECATED_SLOTS; // Deprecated slots, previously used for delegations.
     uint256 internal _followedProfileId;
 
     // Old uint256 `_lastFollowTokenId` slot splitted into two uint128s to include `_followerCount`.
