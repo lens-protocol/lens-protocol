@@ -195,7 +195,7 @@ abstract contract ReferralSystemTest is BaseTest {
                         _executeOperation(target, quoteOrCommentAsReferralPub);
                     }
 
-                    // One special case is a post as referal for reference node
+                    // One special case is a post as referral for reference node
                     console.log('Special case: Target as a quote/comment node and pass post as referral');
                     TestPublication memory referralPub = treeV2.post;
                     // vm.expectCall /* */();
