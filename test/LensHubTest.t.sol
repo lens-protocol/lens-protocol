@@ -36,7 +36,7 @@ contract LensHubTest is BaseTest {
         hub.createProfile(createProfileParams);
     }
 
-    function testCannot_CreateProfile_IfRecepientIsZero() public {
+    function testCannot_CreateProfile_IfRecipientIsZero() public {
         Types.CreateProfileParams memory createProfileParams = _getDefaultCreateProfileParams();
 
         createProfileParams.to = address(0);

@@ -356,7 +356,7 @@ abstract contract LensBaseERC721Test is ERC721Test {
     // Minting to address(0) is tested through the MockNFT instead of using `_LensERC721()._mintERC721(address(0))`
     // because on inherited test contracts like FollowNFTTest, ProfileNFTTest, etc, we cannot reach the required
     // preconditions to test it (e.g. a profile being owned by address(0), to then perform a follow or collect).
-    // This test can be overriden by any future contract that can meet the needed preconditions.
+    // This test can be overridden by any future contract that can meet the needed preconditions.
     function testCannot_MintToZero(uint256 tokenId) public virtual {
         MockNFT nft = new MockNFT();
 
