@@ -78,7 +78,7 @@ contract ProxyAdminTest is BaseTest {
 
     // Scenarios
 
-    function testContructor() public notFork {
+    function testConstructor() public notFork {
         assertEq(address(proxyAdminContract.LENS_HUB_PROXY()), address(hub), 'Hub address is not set correctly');
         assertEq(
             proxyAdminContract.previousImplementation(),
