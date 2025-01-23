@@ -15,7 +15,7 @@ import {VersionedInitializable} from 'contracts/base/upgradeability/VersionedIni
  * @notice Extension of LensHub contract that includes initialization for fresh deployments.
  *
  * @custom:upgradeable Transparent upgradeable proxy.
- * See `../LensHub.sol` for the version without initalizer.
+ * See `../LensHub.sol` for the version without initializer.
  */
 contract LensHubInitializable is LensHub, VersionedInitializable, ILensHubInitializable {
     // Constant for upgradeability purposes, see VersionedInitializable.
